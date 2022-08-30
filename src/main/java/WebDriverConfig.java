@@ -9,6 +9,7 @@ public class WebDriverConfig {
         ChromeOptions options = new ChromeOptions();
         options.setCapability(CapabilityType.BROWSER_NAME, "chrome");
         options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+        options.addArguments("--headless");
         options.addArguments("--ignore-certificate-errors");
         return options;
     }
