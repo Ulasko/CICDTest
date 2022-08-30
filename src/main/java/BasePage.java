@@ -9,7 +9,7 @@ public class BasePage {
         this.driver = DriverManager.getDriver();
     }
 
-    public static LogOnPage goToLogOnPage(){
+    public LogOnPage goToLogOnPage(){
         DriverManager.getDriver().get(startPage);
         return new LogOnPage();
     }
