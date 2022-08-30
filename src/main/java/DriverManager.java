@@ -6,6 +6,7 @@ import java.time.Duration;
 public class DriverManager {
     private static WebDriver driver;
     private static void setDriver(){
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\101\\Downloads\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver(WebDriverConfig.configChrome());
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
