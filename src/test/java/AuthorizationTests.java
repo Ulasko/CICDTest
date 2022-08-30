@@ -1,3 +1,4 @@
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AuthorizationTests extends BaseTest {
@@ -7,6 +8,11 @@ public class AuthorizationTests extends BaseTest {
         new LogOnPage().goToLogOnPage()
                 .ClickGoBtn()
                 .CheckTitle();
+
+    }
+    @Test (description = " Новости")
+    public void Simple() {
+        Assert.assertEquals("login", "login");
 
     }
 

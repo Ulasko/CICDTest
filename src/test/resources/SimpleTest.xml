@@ -5,7 +5,7 @@
         <classes>
         <class name="AuthorizationTests">
             <methods>
-                <include name="Authorization"/>
+                <include name="Simple"/>
             </methods>
         </class>
         </classes>
